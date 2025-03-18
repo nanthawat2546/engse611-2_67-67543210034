@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab with Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="tab-container">
+        <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+        <button class="tab-btn" data-tab="tab2">Tab 2</button>
+    </div>
+
+    <div class="tab-content">
+        <div id="tab1" class="tab-pane active">
+            <h2>JavaScript Event Handling</h2>
+            <p>JavaScript Event Handling</p>
+            
+            <input type="text" id="new-todo-tab1" placeholder="Add a task">
+            <button onclick="addTodo('tab1')">Add</button>
+            <ul id="todo-list-tab1"></ul>
+        </div>
+        <div id="tab2" class="tab-pane">
+            <h2>JavaScript DOM Manipulation</h2>
+            <p>JavaScript DOM Manipulation</p>
+            <input type="text" id="new-todo-tab2" placeholder="Add a task">
+            <button onclick="addTodo('tab2')">Add</button>
+            <ul id="todo-list-tab2"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
